@@ -1,3 +1,20 @@
+## [0.0.5] - 2025-11-16
+
+### Security
+
+- **CRITICAL**: Fixed CVE-2025-64718 (js-yaml prototype pollution)
+- Added pnpm overrides to force js-yaml@4.1.1+
+- Updated @eslint/eslintrc to 3.3.1
+- Fixed file permissions (644) for published files
+- 🔒 Security audit: 0 vulnerabilities
+
+## [0.0.4] - 2025-11-16
+
+### Changed
+
+- Working CI/CD publication with npm token authentication
+- Removed provenance flag (OIDC issues)
+
 ## [0.0.3] - 2025-11-16
 
 ### Added

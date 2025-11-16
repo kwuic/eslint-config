@@ -1,6 +1,6 @@
 {
   "name": "@kwuic/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Comprehensive ESLint and Prettier configuration for Next.js and Fastify projects with TypeScript",
   "author": "kwuic",
   "license": "MIT",

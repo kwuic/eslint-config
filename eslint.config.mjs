@@ -14,10 +14,11 @@ import sonarjs from "eslint-plugin-sonarjs";
 import tailwind from "eslint-plugin-tailwindcss";
 import unicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
-import { fileURLToPath } from "node:url";
-import path from "node:path";
 import globals from "globals";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import tseslint from "typescript-eslint";
+
 import { deprecationRules } from "./lib/rules/deprecation.mjs";
 import { nodeRules } from "./lib/rules/node.mjs";
 import { perfectionistRules } from "./lib/rules/perfectionist.mjs";
@@ -123,7 +124,7 @@ export default [
       "symbol-description": "error",
       "no-unreachable-loop": "error",
       "no-useless-catch": "error",
-      "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+      "func-style": ["error", "declaration", { allowArrowFunctions: true }],
       "@typescript-eslint/member-ordering": "error",
       "@typescript-eslint/method-signature-style": "error",
       "@typescript-eslint/no-confusing-non-null-assertion": "error",

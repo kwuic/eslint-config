@@ -1,0 +1,87 @@
+{
+  "name": "@kwuic/eslint-config",
+  "version": "0.0.4",
+  "description": "Comprehensive ESLint and Prettier configuration for Next.js and Fastify projects with TypeScript",
+  "author": "kwuic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwuic/eslint-config.git"
+  },
+  "homepage": "https://github.com/kwuic/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/kwuic/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "prettier",
+    "nextjs",
+    "react",
+    "typescript",
+    "fastify",
+    "code-quality",
+    "linting",
+    "formatting"
+  ],
+  "main": "eslint.config.mjs",
+  "exports": {
+    ".": "./eslint.config.mjs",
+    "./nextjs": "./nextjs.config.mjs",
+    "./nextjs-no-tailwind": "./nextjs-no-tailwind.config.mjs",
+    "./fastify": "./fastify.config.mjs",
+    "./prettier": "./.prettierrc.yaml"
+  },
+  "files": [
+    "*.config.mjs",
+    ".prettierrc.yaml",
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "prepublishOnly": "echo 'Package ready for publish'",
+    "prepack": "echo 'Packing package'"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.2.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@next/eslint-plugin-next": "^16.0.3",
+    "@tanstack/eslint-plugin-query": "^5.91.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.23.1",
+    "eslint-plugin-no-secrets": "^2.2.1",
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-compiler": "19.1.0-rc.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-you-might-not-need-an-effect": "^0.6.1",
+    "eslint-plugin-regexp": "^2.10.0",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^3.0.5",
+    "eslint-plugin-tailwindcss": "^3.18.2",
+    "eslint-plugin-unicorn": "^62.0.0",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "globals": "^16.4.0",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "typescript-eslint": "^8.20.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+printWidth: 120
+tabWidth: 2
+semi: true
+singleQuote: false
+arrowParens: always
+trailingComma: es5
+importOrder:
+  - "^react$"
+  - "^next"
+  - "^@?\\w"
+  - "^@/"
+  - "^\\.\\./(?!.*\\.css$)"
+  - "^\\./(?!.*\\.css$)"
+  - "\\.css$"
+importOrderSeparation: true
+importOrderSortSpecifiers: true
+plugins:
+  - "@trivago/prettier-plugin-sort-imports"
+  - prettier-plugin-tailwindcss
